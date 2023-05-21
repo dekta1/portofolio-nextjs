@@ -36,23 +36,23 @@ const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center w-full
-    px-4 text-sky-50 bg-gray-900 fixed">
+    px-4 text-sky-50 bg-gray-900 fixed py-2">
         <div>
-            <h1 className="text-4xl font-light ml-2">Project CV</h1>
+            <h1 className="text-2xl font-light ml-3 text-yellow-500">Project CV</h1>
         </div>
 
         <ul className="hidden md:flex">
             {links.map(({id, link}) => 
             (<li
              key={id} 
-             className="px-4 cursor-pointer capitalize font-semibold text-sky-50 hover:scale-105 duration-200">
+             className="px-5 cursor-pointer capitalize text-xl text-yellow-300 hover:bg-gray-500 duration-200">
                 <Link to={link} smooth duration={500}>{link}</Link>
                 </li>
 
             ))}
  
         </ul>
-        <div onClick={() => setNav(!nav) }  className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden">
+        <div onClick={() => setNav(!nav) }  className="cursor-pointer pr-4 z-10 text-white md:hidden">
         
         {nav ? <FaTimes size={30} /> : <FaBars size={30}  />}
         </div>
@@ -65,7 +65,7 @@ const NavBar = () => {
         {links.map(({id, link}) => 
             (<li
                 key={id} 
-                className="px-4 cursor-pointer capitalize py-6 text-4xl">
+                className="px-4 cursor-pointer capitalize py-6 text-3xl hover:bg-gray-500 text-white">
                    <Link onClick={() => setNav (!nav) }
                    to={link} smooth duration={500}>
                     {link}

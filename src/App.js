@@ -8,7 +8,7 @@ import NavBar from "./components/NavBar";
 
 function App() {
   return (
-    <div>
+    <div className='bg-gradient-to-b from-gray-800 to-black'>
       <NavBar />
       <Home />
       <About />

@@ -10,8 +10,10 @@ module.exports = {
       fontFamily: {
         signature: ["Great Vibes"]
       },
+      backgroundImage: {
+        hero:"url(src/assets/img1/tree.jpg)",
+      },
     },
-    
-  }
-  
-}
+  },
+  Plugins:[],
+};

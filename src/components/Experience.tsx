@@ -3,7 +3,7 @@ import html from '../assets/experience/html.png';
 import css from '../assets/experience/css.png';
 import php from '../assets/experience/php.png';
 import javascript from '../assets/experience/javaScript.png';
-import java from '../assets/experience/Java1.jpg';
+import java from '../assets/experience/java.png';
 
 const Experience = () => {
 
@@ -42,19 +42,16 @@ const Experience = () => {
 
 
 
+    
 
-
-
-  return <div id ="Experience"
-  className="bg-gradient-to-b from-gray-800 to-black w-full
-  h-screen">
+  return <div id ="Experience" className="">
     <div className="max-w-screen-lg mx-auto p-4 flex flex-col
-    justify-center h-full w-full text-sky-50">
+    justify-center text-white">
         <div>
             <p className="text-4xl font-bold border-b-4
             border-gray-500 p-2 inline">Experience</p>
 
-            <p className="py-6">These are the technology I've worked with</p>
+            <p className="py-6 text-2xl">These are the technology I've worked with</p>
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3
@@ -63,11 +60,11 @@ const Experience = () => {
             {
                 techs.map(({id, src, title, style}) => (
                     <div key={id} 
-                    className={`shadow-md hover:scale-105 duration-500
+                    className={`shadow hover:shadow-2xl hover:scale-105 duration-500
                     py-2 rounded-lg ${style}`}
                     >
                         <img src={src} alt=""  className="w-20 mx-auto"/>
-                        <p className="mt-4">{title}</p>
+                        <p className="mt-4 text-xl">{title}</p>
             </div>
                 ))
             }
